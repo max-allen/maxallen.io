@@ -4,6 +4,7 @@ import get from 'lodash/get'
 import Helmet from 'react-helmet'
 
 import About from '../components/About'
+import Footer from '../components/Footer'
 import { rhythm } from '../utils/typography'
 import icon from '../../static/favicon.ico'
 
@@ -43,6 +44,8 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
+
+        <Footer />
       </div>
     )
   }
