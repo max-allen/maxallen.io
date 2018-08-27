@@ -41,7 +41,7 @@ class Footer extends Component {
     return (
       <nav 
         style={{
-          borderBottom: '2px solid black',
+          borderBottom: '1px solid black',
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'center',
