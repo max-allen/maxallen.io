@@ -6,6 +6,7 @@ import { rhythm, scale } from '../utils/typography';
 class Template extends Component  {
   render() {
     const { location, children } = this.props;
+
     let header;
 
     let rootPath = `/`

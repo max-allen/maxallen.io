@@ -3,9 +3,14 @@ title: Untitled
 date: "2018-09-27"
 ---
 
-This is my first post on my new fake blog! How exciting!
+Occasionally I've encountered questions like, *"How can I start learning React,"* *"What are React's prerequisites,"*
+or *"What should I know in advance so I can learn React efficiently?"* This article aims to answer these questions. It
+assumes basic knowledge of JavaScript and web development.
 
-I'm sure I'll write a lot more interesting things in the future.
+### The Basics
+
+React  
+
 
 ```javascript
 const functionalComponent = () => {
