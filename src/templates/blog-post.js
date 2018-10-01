@@ -5,11 +5,10 @@ import get from 'lodash/get'
 
 import About from '../components/About'
 import { rhythm, scale } from '../utils/typography'
+import './prism.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    console.log('PROPS', this.props);
-
     
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
