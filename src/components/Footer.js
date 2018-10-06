@@ -47,7 +47,7 @@ class Footer extends Component {
           paddingBottom: rhythm(.25),
       }}
       role="group">
-        <Link to="/" style={this.buttonStyle}>Home</Link>
+        {/*<Link to="/" style={this.buttonStyle}>Home</Link>*/}
         <button id="github" style={this.buttonStyle} onClick={this.navExterally}>Github</button>
         <button id="twitter" style={this.buttonStyle} onClick={this.navExterally}>Twitter</button>
         <button id="otherBlog"style={this.buttonStyle} onClick={this.navExterally}>Trenches</button>
