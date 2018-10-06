@@ -13,8 +13,7 @@ class About extends Component {
     return (
       <div
         style={{
-          display: 'flex',
-          marginBottom: rhythm(0),
+          textAlign: 'left',
         }}
       >
 
@@ -23,16 +22,6 @@ class About extends Component {
         My interests run the gamut, but right now I'm mostly coding
         React JS for FinTech companies.
         </p>
-
-      <img style={{   
-            marginTop: rhythm(-5),
-            marginRight: rhythm(-5),
-            width: rhythm(5),
-            height: rhythm(5),
-        }}
-        src={headshot}
-        />
-        
       </div>
     )
   }

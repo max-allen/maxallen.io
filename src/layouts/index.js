@@ -2,6 +2,7 @@ import React,{ Component } from 'react';
 import Link from 'gatsby-link';
 
 import { rhythm, scale } from '../utils/typography';
+import headshot from '../components/mallen_headshot_7_29_18.png'
 
 class Template extends Component  {
   render() {
@@ -23,14 +24,30 @@ class Template extends Component  {
             marginTop: 0,
           }}
         >
-          <Link 
-          style={{
-            color: 'black',
-            textDecoration: 'none', 
-          }} to='/'>Max Allen
-          </Link>
 
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-evenly',
+            alignItems: 'center'
+          }}>
+            <Link 
+              style={{
+                color: 'black',
+                textDecoration: 'none',
+                fontSize: rhythm(1.3),
+              }} to='/'>Max Allen
+            </Link>
 
+            <img 
+              style={{
+                marginTop: '25px',
+                width: rhythm(5),
+                height: rhythm(5),
+            }}
+            src={headshot}
+            />
+        
+          </div>
         </h1>
       )
     } else {

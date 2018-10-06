@@ -22,8 +22,6 @@ class Footer extends Component {
 
     this.buttonStyle = {
       backgroundColor: 'transparent',
-      marginLeft: rhythm(2),
-      marginRight: rhythm(2),
       border: 'none',
       cursor: 'pointer',
       textDecoration: 'underline',
@@ -44,7 +42,7 @@ class Footer extends Component {
           borderBottom: '1px solid black',
           display: 'flex',
           flexDirection: 'row',
-          justifyContent: 'center',
+          justifyContent: 'space-between',
           paddingTop: rhythm(.25),
           paddingBottom: rhythm(.25),
       }}
