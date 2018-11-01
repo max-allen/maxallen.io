@@ -50,7 +50,7 @@ class Footer extends Component {
         {/*<Link to="/" style={this.buttonStyle}>Home</Link>*/}
         <button id="github" style={this.buttonStyle} onClick={this.navExterally}>Github</button>
         <button id="twitter" style={this.buttonStyle} onClick={this.navExterally}>Twitter</button>
-        <button id="otherBlog"style={this.buttonStyle} onClick={this.navExterally}>Trenches</button>
+        {/*<button id="otherBlog"style={this.buttonStyle} onClick={this.navExterally}>Trenches</button>*/}
       </nav>
     )
   }
