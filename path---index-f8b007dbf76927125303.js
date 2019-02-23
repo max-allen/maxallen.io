@@ -1,0 +1,2 @@
+webpackJsonp([0x81b8806e4260],{516:function(e,t){e.exports={data:{site:{siteMetadata:{title:"maxallen.io"}},allMarkdownRemark:{edges:[{node:{excerpt:"Occasionally I’ve encountered questions like,  “How can I start learning React,”   “What are React’s prerequisites,” \nor  “What should I…",fields:{slug:"/new-page/"},frontmatter:{date:"27 September, 2018",title:"Untitled"}}}]}},pathContext:{}}}});
+//# sourceMappingURL=path---index-f8b007dbf76927125303.js.map
