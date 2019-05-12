@@ -39,16 +39,29 @@ class Footer extends Component {
       <nav 
         style={{
           borderTop: '1px solid black',
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-between',
           paddingTop: rhythm(.25),
           paddingBottom: rhythm(.25),
       }}
       role="group">
-        <button><a href="mailto:contact@maxallen.io">email</a></button>
-        <button id="github" style={this.buttonStyle} onClick={this.navExterally}>github</button>
-        <button id="twitter" style={this.buttonStyle} onClick={this.navExterally}>twitter</button>
+        <a 
+          href='mailto:contact@maxallen.io'
+        >
+          email
+        </a>{' '}
+        &bull;{' '}
+        <a
+          href='https://github.com/max-allen'
+          target='_blank'
+        >
+          github
+        </a>{' '}
+        &bull;{' '}
+        <a
+          href='https://twitter.com/_maxallen_'
+          target='_blank'
+        >
+          twitter
+        </a>
       </nav>
     )
   }
