@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 
 import 'typeface-montserrat'
 import 'typeface-merriweather'
+import './global.css'
 
 import headshot from './mallen_headshot_7_29_18.png'
 
@@ -11,8 +12,6 @@ import { rhythm } from '../utils/typography'
 class Footer extends Component {
   constructor() {
     super();
-
-    this.navExterally = this.navExterally.bind(this);
 
     this.urlPairs = {
       github:'https://github.com/max-allen',
@@ -28,7 +27,7 @@ class Footer extends Component {
     }
   }
 
-  navExterally(e)  {
+  navExterally = e => {
     const { id } = e.target;
     const url = this.urlPairs[id];
 
@@ -39,7 +38,7 @@ class Footer extends Component {
     return (
       <nav 
         style={{
-          borderBottom: '1px solid black',
+          borderTop: '1px solid black',
           display: 'flex',
           flexDirection: 'row',
           justifyContent: 'space-between',
@@ -47,8 +46,9 @@ class Footer extends Component {
           paddingBottom: rhythm(.25),
       }}
       role="group">
-        <button id="github" style={this.buttonStyle} onClick={this.navExterally}>Github</button>
-        <button id="twitter" style={this.buttonStyle} onClick={this.navExterally}>Twitter</button>
+        <button><a href="mailto:contact@maxallen.io">email</a></button>
+        <button id="github" style={this.buttonStyle} onClick={this.navExterally}>github</button>
+        <button id="twitter" style={this.buttonStyle} onClick={this.navExterally}>twitter</button>
       </nav>
     )
   }
