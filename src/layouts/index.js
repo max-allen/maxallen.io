@@ -2,7 +2,7 @@ import React,{ Component } from 'react';
 import Link from 'gatsby-link';
 
 import { rhythm, scale } from '../utils/typography';
-import headshot from '../components/mallen_headshot_7_29_18.png'
+import headshot from '../assets/headshot.png'
 
 class Template extends Component  {
   render() {

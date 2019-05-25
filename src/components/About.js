@@ -3,8 +3,6 @@ import React from 'react'
 import 'typeface-montserrat'
 import 'typeface-merriweather'
 
-import headshot from './mallen_headshot_7_29_18.png'
-
 import { rhythm } from '../utils/typography'
 
 const About = () => (

@@ -5,8 +5,6 @@ import 'typeface-montserrat'
 import 'typeface-merriweather'
 import './global.css'
 
-import headshot from './mallen_headshot_7_29_18.png'
-
 import { rhythm } from '../utils/typography'
 
 class Footer extends Component {
