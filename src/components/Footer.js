@@ -1,5 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Link from 'gatsby-link';
+import { EXTERNAL_LINKS } from '../constants'
+
+const { github: githubUrl, twitter: twitterURL } = EXTERNAL_LINKS
 
 import 'typeface-montserrat'
 import 'typeface-merriweather'
@@ -21,14 +24,14 @@ const Footer = () => (
   </a>{' '}
   &bull;{' '}
   <a
-    href='https://github.com/max-allen'
+    href={githubUrl}
     target='_blank'
   >
     github
   </a>{' '}
   &bull;{' '}
   <a
-    href='https://twitter.com/_maxallen_'
+    href={twitterURL}
     target='_blank'
   >
     twitter
