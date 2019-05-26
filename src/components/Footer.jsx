@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { EXTERNAL_LINKS } from '../constants'
+import Anchor from '.Anchor'
 
 const { github: githubUrl, twitter: twitterURL } = EXTERNAL_LINKS
 
@@ -19,23 +20,22 @@ const Footer = () => (
     }}
     role="group"
   >
-  <a href='mailto:contact@maxallen.io'>
-    email
-  </a>{' '}
-  &bull;{' '}
-  <a
-    href={githubUrl}
-    target='_blank'
-  >
-    github
-  </a>{' '}
-  &bull;{' '}
-  <a
-    href={twitterURL}
-    target='_blank'
-  >
-    twitter
-  </a>
+    <a href='mailto:contact@maxallen.io'>
+      email
+    </a>{' '}
+    &bull;{' '}
+    <Anchor 
+      href={githubUrl}
+      text='github'
+      newTab
+    />
+    {' '}
+    &bull;{' '}
+    <Anchor
+      href={twitterURL}
+      text='twitter'
+      newTab
+    />
   </nav>
 )
 
