@@ -32,7 +32,6 @@ class Template extends Component  {
           }}>
             <Link 
               style={{
-                color: 'black',
                 textDecoration: 'none',
                 fontSize: rhythm(1.3),
               }} to='/'>Max Allen

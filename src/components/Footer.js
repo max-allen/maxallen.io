@@ -1,13 +1,12 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { EXTERNAL_LINKS } from '../constants'
-import Anchor from '.Anchor'
+import { EXTERNAL_LINKS, MAILTO } from '../constants'
+import Anchor from './Anchor'
 
 const { github: githubUrl, twitter: twitterURL } = EXTERNAL_LINKS
 
 import 'typeface-montserrat'
 import 'typeface-merriweather'
-import './global.css'
 
 import { rhythm } from '../utils/typography'
 
@@ -20,7 +19,7 @@ const Footer = () => (
     }}
     role="group"
   >
-    <a href='mailto:contact@maxallen.io'>
+    <a href={MAILTO}>
       email
     </a>{' '}
     &bull;{' '}

@@ -1,0 +1,21 @@
+h1 > a {
+  color: #1B95E0
+}
+
+a {
+  color: black
+}
+
+a:visited {
+  color: black
+}
+
+strong {
+  color: #1B95E0
+}
+
+
+/* 
+  twitter blue
+  #1B95E0 
+*/
