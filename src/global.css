@@ -5,3 +5,12 @@ a {
 a:visited {
   color: black
 }
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  border: 1rem solid #FFDC00;
+}
