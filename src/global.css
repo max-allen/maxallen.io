@@ -12,5 +12,10 @@ html, body {
 }
 
 body {
-  border: 1rem solid #001f3f;
+  border: 1rem solid #85144b;
+}
+
+::selection {
+  background: #85144b;
+  color: #ffffff;
 }
