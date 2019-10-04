@@ -1,10 +1,5 @@
 import React from 'react'
 
-import 'typeface-montserrat'
-import 'typeface-merriweather'
-
-import { rhythm } from '../utils/typography'
-
 const About = () => (
   <div style={{ textAlign: 'left' }}>
 
