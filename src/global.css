@@ -12,10 +12,13 @@ html, body {
 }
 
 body {
-  border: 1rem solid #85144b;
+  border-top: 2.5rem solid #F2F8FD;
+  border-bottom: 10rem solid #F2F8FD;
+  border-left: 30rem solid #F2F8FD;
+  border-right: 30rem solid #F2F8FD;  
 }
 
 ::selection {
-  background: #85144b;
-  color: #ffffff;
+  background: #F2F8FD;
+  color: #AFCFEA;
 }
