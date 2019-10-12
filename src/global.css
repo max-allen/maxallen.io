@@ -22,3 +22,24 @@ body {
   background: #F2F8FD;
   color: #AFCFEA;
 }
+
+@media only screen and (max-width: 360px) {
+  body {
+    border: 10rem solid #F2F8FD;
+  }
+}
+
+@media only screen and (max-width: 175px) {
+  body {
+    border: 100rem solid #F2F8FD;
+  }
+}
+
+@media only screen and (max-width: 2560px) {
+  body {
+    border-top: 2.5rem solid #F2F8FD;
+    border-bottom: 10rem solid #F2F8FD;
+    border-left: 15rem solid #F2F8FD;
+    border-right: 15rem solid #F2F8FD;
+  }
+}
