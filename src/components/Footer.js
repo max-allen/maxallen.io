@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import { EXTERNAL_LINKS, MAILTO, LABELS } from '../constants'
 import Anchor from './Anchor'
 import Bullet from './Bullet'
+import { padding } from '../assets/styles/layout'
 
 const { github: githubUrl, twitter: twitterURL } = EXTERNAL_LINKS
 
@@ -21,8 +22,8 @@ const Footer = () => {
     <div
     style={{
       borderTop: '1px solid black',
-      paddingTop: rhythm(.25),
-      paddingBottom: rhythm(.25),
+      paddingTop: padding.base,
+      paddingBottom: padding.base,
     }}
     role="group"
   >
