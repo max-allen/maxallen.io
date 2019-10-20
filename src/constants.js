@@ -4,3 +4,9 @@ export const EXTERNAL_LINKS = {
 }
 
 export const MAILTO = 'mailto:contact@maxallen.io'
+
+export const LABELS = {
+  github: 'github',
+  email: 'email',
+  twitter: 'twitter'
+}

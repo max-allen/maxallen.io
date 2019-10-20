@@ -38,7 +38,7 @@ class Template extends Component  {
                 fontSize: rhythm(1.3),
               }} 
               to='/'
-              text='Max Allen'>
+            >Max Allen
             </Anchor>
 
             <img 
