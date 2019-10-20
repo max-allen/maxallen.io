@@ -4,6 +4,7 @@ import { EXTERNAL_LINKS, MAILTO, LABELS } from '../constants'
 import Anchor from './Anchor'
 import Bullet from './Bullet'
 import { padding } from '../assets/styles/layout'
+import { borders } from '../assets/styles/borders'
 
 const { github: githubUrl, twitter: twitterURL } = EXTERNAL_LINKS
 
@@ -21,7 +22,7 @@ const Footer = () => {
   return (
     <div
     style={{
-      borderTop: '1px solid black',
+      borderTop: borders.base,
       paddingTop: padding.base,
       paddingBottom: padding.base,
     }}
