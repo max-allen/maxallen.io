@@ -1,12 +1,14 @@
 import React,{ Component } from 'react';
 import Link from 'gatsby-link';
-
+import Anchor from './Anchor';
 import { rhythm, scale } from '../utils/typography';
 import headshot from '../assets/headshot.png'
 
 class Template extends Component  {
   render() {
-    const { location, children } = this.props;
+    const { children } = this.props;
+
+    let location = true
 
     let header;
 
@@ -15,7 +17,7 @@ class Template extends Component  {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
-    if (location.pathname === rootPath) {
+    if (location) {
       header = (
         <h1
           style={{
@@ -30,12 +32,14 @@ class Template extends Component  {
             justifyContent: 'space-evenly',
             alignItems: 'center'
           }}>
-            <Link 
+            <Anchor 
               style={{
                 textDecoration: 'none',
                 fontSize: rhythm(1.3),
-              }} to='/'>Max Allen
-            </Link>
+              }} 
+              to='/'
+              text='Max Allen'>
+            </Anchor>
 
             <img 
               style={{
@@ -58,7 +62,7 @@ class Template extends Component  {
             marginBottom: rhythm(-1),
           }}
         >
-          <Link
+          <Anchor
             style={{
               boxShadow: 'none',
               textDecoration: 'none',
@@ -66,7 +70,7 @@ class Template extends Component  {
             }}
             to={'/'}
           >
-          </Link>
+          </Anchor>
         </h3>
       )
     }
@@ -80,7 +84,7 @@ class Template extends Component  {
         }}
       >
         {header}
-        {children()}
+        {children}
       </div>
     )
   }

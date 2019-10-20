@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-
+import Template from '../components/About'
 import About from '../components/About'
 import Footer from '../components/Footer'
 import { rhythm } from '../utils/typography'
@@ -15,17 +15,13 @@ class BlogIndex extends React.Component {
     const posts = get(this, 'props.data.allMarkdownRemark.edges')
 
     return (
-      <div>
-        
+      <>
         <Helmet 
         title={siteTitle} 
         link={[{rel: 'icon', href: icon}]} 
         />
-
         <About />
-
-        <Footer />
-      </div>
+      </>
     )
   }
 }
