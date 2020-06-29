@@ -12,10 +12,11 @@ html, body {
 }
 
 body {
-  border-top: 2.5rem solid #F2F8FD;
+  background-color: #F2F8FD;
+  /* border-top: 2.5rem solid #F2F8FD;
   border-bottom: 10rem solid #F2F8FD;
   border-left: 30rem solid #F2F8FD;
-  border-right: 30rem solid #F2F8FD;  
+  border-right: 30rem solid #F2F8FD; */
 }
 
 ::selection {
@@ -25,10 +26,10 @@ body {
 
 @media only screen and (max-width: 2560px) {
   body {
-    border-top: 2.5rem solid #F2F8FD;
+    /* border-top: 2.5rem solid #F2F8FD;
     border-bottom: 10rem solid #F2F8FD;
     border-left: 15rem solid #F2F8FD;
-    border-right: 15rem solid #F2F8FD;
+    border-right: 15rem solid #F2F8FD; */
   }
 }
 

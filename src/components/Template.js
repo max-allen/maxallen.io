@@ -77,9 +77,13 @@ class Template extends Component  {
     return (
       <div
         style={{
+          border: '1px solid rgba(0,0,0,0.1)',
+          backgroundColor: '#FFFFFF',
           marginLeft: 'auto',
           marginRight: 'auto',
-          maxWidth: rhythm(24),
+          marginTop: '10%',
+          marginBottom: '10%',
+          maxWidth: rhythm(31),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
