@@ -18,11 +18,11 @@ const About = () => (
       &nbsp;and previously an engineer at <a href='https://transfix.io/'>Transfix.</a>
       </p>
 
-      <p>&nbsp;I've consulted for a number of startups based here in NYC, helping them build both web and
+      <p>I've consulted for a number of startups based here in NYC, helping them build both web and
       mobile applications. I love product, and have leaned clientside up to this point, but I'm fairly
       comfortable across the stack (esp. if we're talking Node.js / Python BEs). I've benefitted from
-      being both conscienous and industrious, but I believe it's my curiousity and ardor for technical subjects
-      that distinguishes me as an engineer.
+      being both conscientious and industrious, but I believe it's my curiosity and ardor for both
+      product & technical subjects that distinguishes me as an engineer.
       </p>
     <Footer />
   </div>
