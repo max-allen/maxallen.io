@@ -2,8 +2,12 @@ a {
   color: black
 }
 
+a:hover {
+  color: #555555
+}
+
 a:visited {
-  color: black
+  color: #7992a0
 }
 
 html, body {
@@ -24,7 +28,7 @@ body {
 }
 
 @media only screen
-and (max-width: 1095px) {
+and (max-width: 760px) {
   body {
     height: auto;
   }
