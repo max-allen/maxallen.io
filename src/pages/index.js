@@ -1,8 +1,8 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Template from '../components/About'
+import Card from '../components/Card'
+import Header from '../components/Header'
 import About from '../components/About'
 import Footer from '../components/Footer'
 import { rhythm } from '../utils/typography'
@@ -20,7 +20,11 @@ class BlogIndex extends React.Component {
         title={siteTitle} 
         link={[{rel: 'icon', href: icon}]} 
         />
-        <About />
+        <Card>
+          <Header />
+          <About />
+          <Footer />
+        </Card>
       </>
     )
   }

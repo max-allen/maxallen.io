@@ -6,8 +6,6 @@ import 'typeface-montserrat'
 import 'typeface-merriweather'
 
 import { rhythm } from '../utils/typography'
-import Template from  './Template'
-import Footer from './Footer'
 
 const LineHeightOverride = styled.div`
   lineHeight: ${rhythm(1.2)};
@@ -29,12 +27,7 @@ const About = () => (
       a generalist and am comfortable across the stack. I've benefited from being both conscientious and industrious,
       but my curiosity and enthusiasm at the intersection of product & engineering are my greatest assets as an engineer.
       </p>
-    <Footer />
   </LineHeightOverride>
 )
 
-export default () => (
-  <Template>
-    <About />
-  </Template>
-) 
+export default About
