@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Anchor from './Anchor';
 import { rhythm, scale } from '../utils/typography';
 import headshot from '../assets/headshot.png'
 

@@ -1,5 +1,4 @@
 import React,{ Component } from 'react';
-import Anchor from './Anchor';
 import Header from './Header'
 import { rhythm, scale } from '../utils/typography';
 import headshot from '../assets/headshot.png'

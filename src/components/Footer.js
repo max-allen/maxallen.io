@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import { EXTERNAL_LINKS, MAILTO, LABELS } from '../constants'
-import Anchor from './Anchor'
 import Bullet from './Bullet'
 import { padding } from '../assets/styles/layout'
 import { borders } from '../assets/styles/borders'
@@ -14,9 +13,9 @@ import 'typeface-merriweather'
 import { rhythm } from '../utils/typography'
 
 const Footer = () => {
-  const email = <Anchor href={MAILTO}>{LABELS.email}</Anchor>
-  const github = <Anchor href={githubUrl} newTab>{LABELS.github}</Anchor>
-  const twitter = <Anchor href={twitterURL} newTab>{LABELS.twitter}</Anchor>
+  const email = <a href={MAILTO}>{LABELS.email}</a>
+  const github = <a href={githubUrl} target='_blank'>{LABELS.github}</a>
+  const twitter = <a href={twitterURL} target='_blank'>{LABELS.twitter}</a>
   const links = [email, github, twitter]
 
   return (
