@@ -13,10 +13,10 @@ html, body {
 
 body {
   background-color: #F2F8FD;
-  /* border-top: 2.5rem solid #F2F8FD;
-  border-bottom: 10rem solid #F2F8FD;
-  border-left: 30rem solid #F2F8FD;
-  border-right: 30rem solid #F2F8FD; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 ::selection {
@@ -24,19 +24,9 @@ body {
   color: #AFCFEA;
 }
 
-@media only screen and (max-width: 2560px) {
-  body {
-    /* border-top: 2.5rem solid #F2F8FD;
-    border-bottom: 10rem solid #F2F8FD;
-    border-left: 15rem solid #F2F8FD;
-    border-right: 15rem solid #F2F8FD; */
-  }
-}
-
-@media only screen 
-and (min-width: 360px)
+@media only screen
 and (max-width: 1095px) {
   body {
-    border: 1rem solid #F2F8FD;
+    height: auto;
   }
 }

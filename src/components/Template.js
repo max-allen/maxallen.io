@@ -2,7 +2,7 @@ import React,{ Component } from 'react';
 import Link from 'gatsby-link';
 import Anchor from './Anchor';
 import { rhythm, scale } from '../utils/typography';
-import headshot from '../assets/headshot.png'
+import headshot from '../assets/headshot_circle.png'
 
 class Template extends Component  {
   render() {
@@ -41,11 +41,11 @@ class Template extends Component  {
             >Max Allen
             </Anchor>
 
-            <img 
+            <img
               style={{
                 marginTop: '25px',
-                width: rhythm(5),
-                height: rhythm(5),
+                width: rhythm(7),
+                height: rhythm(7),
             }}
             src={headshot}
             />
