@@ -2,8 +2,12 @@ a {
   color: black
 }
 
+a:hover {
+  color: #555555
+}
+
 a:visited {
-  color: black
+  color: #7992a0
 }
 
 html, body {
