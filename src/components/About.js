@@ -1,4 +1,5 @@
 import React from 'react'
+import { isMobile } from 'react-device-detect'
 
 import 'typeface-montserrat'
 import 'typeface-merriweather'
@@ -13,7 +14,7 @@ const About = () => (
       lineHeight: rhythm(1.2)
     }}
   >
-      <p>I'm a Software Engineer based in <strong>New York City.</strong>
+      <p>I'm a Software Engineer based in { isMobile && <br /> } <strong>New York City.</strong>
       &nbsp;Currently building things at <a href='https://www.nytimes.com/'>The New York Times,</a>
       &nbsp;and previously an engineer at <a href='https://transfix.io/'>Transfix.</a>
       </p>
