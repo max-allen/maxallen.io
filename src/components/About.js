@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 import { isMobile } from 'react-device-detect'
 
 import 'typeface-montserrat'
@@ -8,8 +9,12 @@ import { rhythm } from '../utils/typography'
 import Template from  './Template'
 import Footer from './Footer'
 
+const LineHeightOverride = styled.div`
+  lineHeight: ${rhythm(1.2)};
+`
+
 const About = () => (
-  <div
+  <LineHeightOverride
     style={{
       lineHeight: rhythm(1.2)
     }}
@@ -25,7 +30,7 @@ const About = () => (
       but my curiosity and enthusiasm at the intersection of product & engineering are my greatest assets as an engineer.
       </p>
     <Footer />
-  </div>
+  </LineHeightOverride>
 )
 
 export default () => (
