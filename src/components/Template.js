@@ -2,7 +2,7 @@ import React,{ Component } from 'react';
 import Link from 'gatsby-link';
 import Anchor from './Anchor';
 import { rhythm, scale } from '../utils/typography';
-import headshot from '../assets/headshot_circle.png'
+import headshot from '../assets/headshot.png'
 
 class Template extends Component  {
   render() {
@@ -79,12 +79,8 @@ class Template extends Component  {
         style={{
           border: '1px solid rgba(0,0,0,0.1)',
           backgroundColor: '#FFFFFF',
-          marginLeft: 'auto',
-          marginRight: 'auto',
-          marginTop: '10%',
-          marginBottom: '10%',
           maxWidth: rhythm(31),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
         }}
       >
         {header}
