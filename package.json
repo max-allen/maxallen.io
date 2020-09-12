@@ -54,6 +54,7 @@
   "scripts": {
     "dev": "gatsby develop",
     "serve": "gatsby serve",
+    "clean": "rm -rf .cache node_modules && rm package-lock.json && npm i",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
