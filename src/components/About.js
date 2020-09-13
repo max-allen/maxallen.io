@@ -25,7 +25,7 @@ const About = () => (
     <p>I've consulted for a number of startups based in NYC, helping them build both web and
     mobile applications. The depth of my experience is the greatest client-side, but I consider myself
     a generalist and am comfortable across the stack. I've benefited from being both conscientious and industrious,
-    but my curiosity and enthusiasm at the intersection of product & engineering are my greatest assets as an engineer.
+    but my talent at the intersection of product & engineering is my greatest asset as an engineer.
     </p>
   </LineHeightOverride>
 )
