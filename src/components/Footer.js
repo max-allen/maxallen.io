@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { EXTERNAL_LINKS, MAILTO, LABELS } from '../constants'
 import Bullet from './Bullet'
+import Anchor from './Anchor'
 
 const { github: githubUrl, twitter: twitterURL } = EXTERNAL_LINKS
 
@@ -16,9 +17,9 @@ const FooterContainer = styled.div`
 `
 
 const Footer = () => {
-  const email = <a href={MAILTO}>{LABELS.email}</a>
-  const github = <a href={githubUrl} target='_blank'>{LABELS.github}</a>
-  const twitter = <a href={twitterURL} target='_blank'>{LABELS.twitter}</a>
+  const email = <Anchor href={MAILTO}>{LABELS.email}</Anchor>
+  const github = <Anchor href={githubUrl} target='_blank'>{LABELS.github}</Anchor>
+  const twitter = <Anchor href={twitterURL} target='_blank'>{LABELS.twitter}</Anchor>
   const links = [email, github, twitter]
 
   return (

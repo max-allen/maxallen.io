@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { isMobile } from 'react-device-detect'
+import Anchor from './Anchor'
 
 import 'typeface-montserrat'
 import 'typeface-merriweather'
@@ -18,8 +19,8 @@ const About = () => (
     }}
   >
     <p>I'm a Software Engineer based in { isMobile && <br /> } <strong>New York City.</strong>
-    &nbsp;Currently building things at <a href='https://www.nytimes.com/'>The New York Times,</a>
-    &nbsp;and previously an engineer at <a href='https://transfix.io/'>Transfix.</a>
+    &nbsp;Currently building things at <Anchor href='https://www.nytimes.com/' target='_blank'>The New York Times,</Anchor>
+    &nbsp;and previously an engineer at <Anchor href='https://transfix.io/' target='_blank'>Transfix.</Anchor>
     </p>
 
     <p>I've consulted for a number of startups based in NYC, helping them build both web and
