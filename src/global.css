@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #F2F8FD;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+::selection {
+  background: #F2F8FD;
+  color: #AFCFEA;
+}
+
+@media only screen
+and (max-width: 760px) {
+  body {
+    height: auto;
+  }
+}
