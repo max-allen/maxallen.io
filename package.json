@@ -20,7 +20,7 @@
     "gatsby-transformer-remark": "^2.6.30",
     "gatsby-transformer-sharp": "^2.2.23",
     "history": "^4.10.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "react": "^16.10.2",
     "react-device-detect": "^1.13.1",
     "react-dom": "^16.10.2",
