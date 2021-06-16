@@ -4,30 +4,46 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Card from "../components/Card"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
+import About from "../components/About"
+import Anchor from "../components/Anchor"
+import { Helmet } from "react-helmet"
+import icon from '../favicon.ico'
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
-  if (posts.length === 0) {
-    return (
-      <Layout location={location} title={siteTitle}>
-        <Seo title="All posts" />
-        <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
+  // if (posts.length === 0) {
+  //   return (
+  //     <Layout location={location} title={siteTitle}>
+  //       <Seo title="All posts" />
+  //       <Bio />
+  //       <p>
+  //         No blog posts found. Add markdown posts to "content/blog" (or the
+  //         directory you specified for the "gatsby-source-filesystem" plugin in
+  //         gatsby-config.js).
+  //       </p>
+  //     </Layout>
+  //   )
+  // }
 
+    // <Layout location={location} title={siteTitle}>
+
+    //</Layout>
   return (
-    <Layout location={location} title={siteTitle}>
-      <Seo title="All posts" />
-      <Bio />
-      <ol style={{ listStyle: `none` }}>
+
+      <Card>
+        <Header />
+        <About />
+        <Footer />
+        <Helmet 
+          title={siteTitle} 
+          link={[{rel: 'icon', href: icon}]} 
+        />
+      {/* <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
@@ -58,8 +74,8 @@ const BlogIndex = ({ data, location }) => {
             </li>
           )
         })}
-      </ol>
-    </Layout>
+      </ol> */}
+      </Card>
   )
 }
 
